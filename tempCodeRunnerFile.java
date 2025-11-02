@@ -1,0 +1,1 @@
+merge(arr, 0, (arr.length-1)/2, arr.length-1);
