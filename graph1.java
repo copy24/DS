@@ -86,7 +86,14 @@ public class graph1{
         create_edge(graph, 5, 6);
 
         create_edge(graph, 6, 5);
-
+        show(graph);
+        System.out.println();
+        System.out.print("DFS:");
         dfs(graph,vis, 6);
+          
+        System.out.println();
+        System.out.print("BFS:");
+        bfs(graph, V, 0);
+
     }
 }
