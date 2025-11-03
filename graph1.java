@@ -97,3 +97,56 @@ public class graph1{
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''Theory:
+A graph is a data structure consisting of vertices (nodes) and edges (connections) that connect pairs
+of vertices. It can be directed or undirected, and weighted or unweighted depending on the use-case.
+● Adjacency List Representation
+The adjacency list is one of the most memory-efficient ways to represent a graph, especially when
+the graph is sparse (contains fewer edges).
+● Each node maintains a list of all its adjacent (connected) vertices.
+● This structure typically uses a hash map or array of lists in Java.
+Breadth-First Search (BFS)
+BFS explores the graph level by level starting from a source vertex.
+● It uses a queue data structure to track vertices to be explored next.
+● BFS is ideal for finding the shortest path in unweighted graphs.
+
+Steps:
+1. Start at the source node.
+2. Visit all its neighbours.
+3. Visit the neighbours’ neighbours next, and so on.
+Depth-First Search (DFS)
+
+DFS explores as far as possible along each branch before backtracking.
+● It uses a stack (explicit or via recursion).
+● DFS is used for cycle detection, topological sorting, and checking connectivity.
+
+Steps:
+1. Start at the source node.
+2. Visit a neighbour, then its neighbour, and so on until no unvisited nodes remain.
+3. Backtrack and repeat for other unexplored paths'''

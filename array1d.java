@@ -85,3 +85,85 @@ public class array1d{
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''Arrays are fundamental data structures used to store a collection of elements of the same data type
+in contiguous memory locations. They provide a way to organize and access multiple values using a
+single variable name and an index. Each element in an array can be accessed directly using its
+index, starting from 0.
+
+A Java array variable is declared just like you would declare a variable of the desired type, except
+you add [] after the type. Here is a simple Java array declaration example:
+int[] intArray;
+You can use a Java array as a field, static field, a local variable, or parameter, just like any other
+variable. An array is simply a variation of the data type. Instead of being a single variable of that
+type, it is a collection of variables of that type.
+Here are a few more Java array declaration examples:
+
+String[] stringArray;
+MyClass[] myClassArray;
+
+Instantiating an Array in Java
+When you declare a Java array variable you only declare the variable (reference) to the array itself.
+The declaration does not actually create an array. You create an array like this:
+
+int[] intArray;
+intArray = new int[10];
+
+Java Array Length Cannot Be Changed
+Once an array has been created its size cannot be resized. In some programming languages (e.g.
+JavaScript) arrays can change their size after creation, but in Java an array cannot change its size
+once it is created. If you need an array-like data structure that can change its size, you should use a
+List, or you can create a resizable Java array. In some cases you can also use a Java RingBuffer
+which, by the way, is implemented using a Java array internally.
+Accessing Java Array Elements
+Each variable in an Java array is also called an &quot;element&quot;. Thus, the example shown earlier created
+an array with space for 10 elements, and each element is a variable of type int.
+Each element in the array has an index (a number). You can access each element in the array via its
+index. Here is an example:
+
+intArray[0] = 0;
+int firstInt = intArray[0];
+
+Array Length
+You can access the length of an array via its length field. Here is an example:
+
+int[] intArray = new int[10];
+int arrayLength = intArray.length;
+
+In this example the variable named arrayLength will contain the value 10 after the second line of
+code has been executed.
+
+Multidimensional Java Arrays
+The examples shown above all created arrays with a single dimension, meaning elements with
+indexes going from 0 and up. It is, however, possible to create arrays where each element has two or
+more indexes.
+You create a multidimensional array in Java by appending one set of square brackets ([]) per
+dimension you want to add. Here is an example that creates a two-dimensional array:
+
+int[][] intArray = new int[10][20];'''

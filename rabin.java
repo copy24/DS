@@ -39,3 +39,67 @@ public class rabin{
         search(pattern, text);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''String matching is one of the most important problems in computer science, with applications
+in text editors, search engines, and bioinformatics. The goal is to find whether a given pattern
+occurs within a larger text. The Rabin-Karp algorithm is a string searching algorithm that uses
+the idea of hashing to achieve efficient matching.
+
+Instead of comparing the pattern with the text character by character, Rabin-Karp converts
+both into hash values and compares the hashes. If the hash of the current substring of the text
+matches the hash of the pattern, then the algorithm performs a direct character comparison to
+confirm the match. This significantly reduces unnecessary comparisons and improves
+performance when searching for multiple patterns or working with large texts.
+
+Working principle:
+1. Compute the hash value of the pattern and the hash value of the first window
+(substring) of the text.
+2. Slide the window one character at a time, updating the hash efficiently using a rolling
+hash function.
+3. If the hash values match, verify by direct comparison to avoid false positives caused by
+hash collisions.
+4. Repeat until the entire text has been scanned.
+
+Applications:
+● Detecting plagiarism by finding similar phrases in large documents.
+● Searching keywords in documents, files, or web pages.
+● DNA sequence analysis in bioinformatics.
+● Spam filtering and intrusion detection systems.
+
+Thus, Rabin-Karp provides a balance between efficiency and correctness by using hashing for
+fast detection and verification for accuracy.'''
